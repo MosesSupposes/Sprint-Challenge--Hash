@@ -42,7 +42,7 @@ class TestEx2(unittest.TestCase):
         queries += [
             "file3490",
             "file256",
-            "file999999",
+            "file9999999",
             "file8192"
         ]
 
@@ -53,6 +53,7 @@ class TestEx2(unittest.TestCase):
             '/dir256/file256', '/dir3490/dirb3490/file3490',
             '/dir3490/file3490', '/dir8192/dirb8192/file8192',
             '/dir8192/file8192'])
+  
 
 if __name__ == '__main__':
     unittest.main()
