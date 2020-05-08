@@ -1,8 +1,14 @@
 def intersection(arrays):
-
-    """
-    YOUR CODE HERE
-    """
+    tally = {}
+    for sub_array in arrays: 
+        for number in sub_array:
+            if number not in tally:
+                tally[number] = 1
+            else:
+                tally[number] += 1
+    
+    result = list(filter(lambda tally_tuple: tally_tuple[1] == len(arrays), tally.items()))
+    result = list(map(lambda tally_tuple: tally_tuple[0], result))
 
     return result
 
