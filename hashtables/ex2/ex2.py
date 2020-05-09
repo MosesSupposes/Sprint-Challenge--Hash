@@ -17,6 +17,6 @@ def reconstruct_trip(tickets, length):
             routes_list.append("NONE")
             break
         else:
-            routes_list.extend([routes_dict[destination]])
+            routes_list.append(routes_dict[destination])
 
     return routes_list
